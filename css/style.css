@@ -101,3 +101,44 @@ body{
     border: none;
     border-radius: 0 20px 20px 0;
 }
+.main__filters{
+    margin-top: 45px;
+    display: flex;
+    font-weight: 700;
+    align-items: center;
+}
+.main .main__h2{
+    
+    font-size: 18px;
+    margin-right: 30px;
+}
+.main .main__list{
+    font-size: 18px;
+    list-style: none;
+    display: flex;
+}
+.main__filter{
+    padding: 15px;
+    margin-right: 41px;
+    border: 2px solid #D9D9D9;
+    border-radius: 25px;
+}
+.main__filter:hover{
+    background-color: #DEEBFF;
+}
+.fa-solid.fa-money-bill-wave{
+    color: blue;
+    margin-right: 10px;
+}
+.fa-solid.fa-person{
+    color: blue;
+    margin-right: 10px;
+}
+.fa-solid.fa-heart{
+    color: blue;
+    margin-right: 10px;
+}
+.fa-solid.fa-dog{
+    color: blue;
+    margin-right: 10px;
+}
