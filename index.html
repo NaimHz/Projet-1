@@ -3,17 +3,34 @@
 <head>
    <title>Booki</title>
    <link rel="stylesheet" type="text/css" href="css/style.css">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
    <script src="https://kit.fontawesome.com/a68c4aa843.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <img class=logo src="assets/Booki.png">
-            <div class="nav--right">
-                <a href=#> Hébergements </a>
-                <a href=#> Activités </a>
+    <header class="header">
+        <nav class="header__nav">
+            <img class="header__logo" src="assets/Booki.png">
+            <div class="header__links">
+                <a href=# class="header__link"> Hébergements </a>
+                <a href=# class="header__link"> Activités </a>
             </div>
         </nav>
     </header>
+    <main class="main">
+        <h1 class="main__h1">Trouvez votre hébergement pour des vacances de rêve</h1>
+        <p class="main__p">En plein centre-ville ou en pleine nature</p>
+        <div class="main__searchbar">
+            <div class="location">
+                <i class="fa-solid fa-location-dot"></i>
+            </div>
+            <form class="searchbar__form">
+                <input name="rechercher" placeholder="Marseille, France" class="searchbar__input">
+                <button class="searchbar__button">Rechercher</button>
+            </form>
+
+   
+   
+        </div>    
+    </main>
 </body>
 </html>
