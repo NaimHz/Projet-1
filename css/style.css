@@ -7,7 +7,7 @@
     padding: 0;
 }
 body{
-    background-color: white;  
+    background-color: white;
     font-size: 16px;
 }
 .header{
@@ -163,7 +163,7 @@ body{
     margin-bottom: 23px;
 }
 .main .main__hebergements--marseille{
-    width: 75%;
+    width: 78%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -174,18 +174,21 @@ body{
 }
 .main .main__hebergements--populaires{
     background-color: #F2F2F2;
-    width: 37%;
+    width: 36%;
     margin-left: 2%;
-    padding: 37px;
+    padding: 35px;
     border-radius: 10px;
     height: 500px;
 }
 .fa-solid.fa-chart-line{
     color: #0065FC;
     position: relative;
-    left: 30%;
-
+    left: 27%;
 }
+.main .main__links{
+    text-decoration: none;
+    color: inherit;
+}    
 .main .main__card--marseille{
     width: 30%;
     background-color: white;
@@ -245,5 +248,67 @@ body{
 }
 .main__card--populaire .main__card--score{
     margin-top: auto;
+}
+.main .main__article--activités{
+    margin: 55px 10px 0 45px;
+}
+.main .main__ativités--title{
+    font-size: 20px;
+}
+.main .main__activités--marseille{
+    margin-top: 20px;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+}
+.main .main__affiches--marseille{
+    margin-right: 40px;
+    box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.28);
+    border-radius: 20px 20px 20px 20px;
+    width: 20%;
+    
+    
+}
+.main .main__affiches--img{
+    object-fit: cover;
+    width: 100%;
+    height: 320px;
+    border-radius: 20px 20px 0 0;
+    
+}
+.main .main__affiches--title{
+    border-radius: 0 0 20px 20px;
+    background-color: white;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 18px;
+    padding-left: 13px;
+    padding-bottom: 10px;
+    padding-top: 10px;
+    
+}
+.footer{
+    display: flex;
+    margin-top: 60px;
+    align-items: top;
+    margin: 60px 53px 0 48px;
+    justify-content: space-around;
+    background-color: #F2F2F2;
+}
+.footer .footer__ul{
+    list-style: none;
+    margin-top: 45px;
+    margin-bottom: 35px;
+    
+    
+}
+.footer .footer__li:first-child{
+    margin-bottom: 20px;
+    font-size: 16px;
+    font-weight: 700;
+}
+.footer .footer__li{
+    margin-bottom: 12px;
+    font-size: 14px;
 }
 
