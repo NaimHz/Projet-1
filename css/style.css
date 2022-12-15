@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap');  
 
 *{
-    max-width: 1400px;
+    
     font-family: "Raleway";
     margin: 0;
     padding: 0;
@@ -9,6 +9,7 @@
 body{
     background-color: white;
     font-size: 16px;
+    max-width: 1400px;
 }
 .header{
     font-size: 16px;
@@ -173,6 +174,8 @@ body{
     height: 500px;
 }
 .main .main__hebergements--populaires{
+    display: flex;
+    flex-direction: column;
     background-color: #F2F2F2;
     width: 36%;
     margin-left: 2%;
@@ -188,6 +191,7 @@ body{
 .main .main__links{
     text-decoration: none;
     color: inherit;
+    width: inherit;
 }    
 .main .main__card--marseille{
     width: 30%;
@@ -231,7 +235,7 @@ body{
     height: 130px;
     border-radius: 10px 0 0 10px;
 }
-.main .main__card--populaire{
+.main__card--populaire .main__links{
     display: flex;
     background-color: white;
     border-radius: 10px 10px 10px 10px;
@@ -266,8 +270,6 @@ body{
     box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.28);
     border-radius: 20px 20px 20px 20px;
     width: 20%;
-    
-    
 }
 .main .main__affiches--img{
     object-fit: cover;
@@ -285,7 +287,6 @@ body{
     padding-left: 13px;
     padding-bottom: 10px;
     padding-top: 10px;
-    
 }
 .footer{
     display: flex;
@@ -299,8 +300,6 @@ body{
     list-style: none;
     margin-top: 45px;
     margin-bottom: 35px;
-    
-    
 }
 .footer .footer__li:first-child{
     margin-bottom: 20px;
@@ -310,5 +309,51 @@ body{
 .footer .footer__li{
     margin-bottom: 12px;
     font-size: 14px;
+}
+@media (max-width: 992px){
+    *{
+        max-width: 992px;
+    }
+    .main .main__filter{
+        padding: 8px 13px;
+    }
+    .main .main__article--hebergements{
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        align-items: center;
+        margin: 39px 10% 0px 10%
+    }
+    .main .main__hebergements--marseille{
+        width: 100%;
+    }
+    .main .main__hebergements--populaires{
+        margin-top: 50px;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        height: auto;
+        flex-wrap: wrap;
+        padding: 35px 25px 35px 30px;
+        margin-left: 0;
+    }
+    .main .main__hebergements-title{
+        flex-basis: 100%;
+    }
+    .fa-solid.fa-chart-line{
+        margin-left: 46%;
+    }
+    .main__hebergements--populaires .main__links{
+        width: auto;
+        height: auto;
+    }
+    .main .main__card--populaire{
+        width: 30%;
+        margin-right: 3%;
+        word-wrap: break-word;
+    }
+    .main .main__affiches--img{
+        height: 211px;
+    }
 }
 
