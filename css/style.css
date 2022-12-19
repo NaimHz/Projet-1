@@ -88,6 +88,7 @@ body{
     color: black;
     font-size: 18px;
     padding-right: 70px;
+    padding-left: 5%;
 }
 .main .searchbar__input::placeholder{
     color: black;
@@ -101,6 +102,9 @@ body{
     color: white;
     border: none;
     border-radius: 0 20px 20px 0;
+}
+.main .searchbar__button2{
+    display: none;
 }
 .main__filters{
     margin-top: 45px;
@@ -310,7 +314,7 @@ body{
     margin-bottom: 12px;
     font-size: 14px;
 }
-@media (max-width: 992px){
+@media screen and (max-width: 991px){
     *{
         max-width: 992px;
     }
@@ -331,7 +335,7 @@ body{
         margin-top: 50px;
         display: flex;
         flex-direction: row;
-        width: 100%;
+        width: 103%;
         height: auto;
         flex-wrap: wrap;
         padding: 35px 25px 35px 30px;
@@ -355,5 +359,160 @@ body{
     .main .main__affiches--img{
         height: 211px;
     }
+    .main .main__card--price{
+        font-size: 11px;
+    }
 }
+@media screen and (max-width: 767px){
+    .body{ 
+        width: 100%;
+    }
+    .header{
+        margin-left: 0;
+    }
+    .header .header__nav{
+        flex-direction: column;
+        align-items: center;
+        margin-top: 21px;
+    }
+    .header .header__link{
+        padding-bottom: 20px;
+        border-bottom: 2px solid #f2f2f2;
+        width: 50vw;
+    }
+    .header .header__link:hover{
+        border-top: none;
+        border-bottom: 2px solid #0065FC;
+        margin-top: -2px;
+    }
+    .main .main__section--filters{
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .main .main__h1{
+        margin-right: 20px;
+    }
+    .main .main__searchbar{
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .main .searchbar__form{
+        width: 100%;
+        justify-content: unset;
+    }
+    .main .searchbar__input{
+        padding-left: 4%;
+        padding-right: 7%;
+    }
+    .location{
+        align-self: center;
+        
+    }
+    .main .searchbar__button{
+        display: none;
+    }
+    .main .searchbar__button2{
+        width: 50px;
+        height: 49px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #0065FC;
+        border-radius: 0px 20px 20px 0px;
+        color: white;
+        box-shadow: 0;
+        border: 0;
+    }
+    .main .main__list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .main .main__filters{
+        flex-direction: column;
+        align-items: unset;
+    }
+    .main .main__filter{
+        width: 27vw;
+        font-size: 11px;
+        margin-top: 2vh;
+    }
+    .main .main__list{
+        margin-top: 2vh;
+        justify-content: space-between;
+    }
+    .main .main__article--hebergements{
+        flex-direction: column-reverse;
+        margin: 0;
+        width: 100vw;
+    }
+    .main .main__hebergements--populaires{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .main .main__hebergements-title{
+        margin-left: 4vw;
+    }
+    .main .main__card--populaire{
+        width: 80%;
+
+    }
+    .fa-solid.fa-chart-line{
+        margin-left: 15%;
+    }
+    .main .main__hebergements--marseille{
+        flex-direction: column;
+        justify-self: center;
+        align-items: center;
+        background-color: white;
+        height: auto;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .main .main__card--marseille{
+        width: 80%;
+        margin-right: 3vw;
+    }
+    .main__article--hebergements h2{
+        margin-left: 2vw;
+    }
+    .main .main__h4{
+        display: none;
+    }
+    .main .main__article--activités{
+        margin: 0;
+        margin-left: 2vw;
+        margin-right: 2vw;
+    }
+    .main__activités--marseille{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .main .main__affiches--marseille{
+        width: 90%;
+        margin-right: 0;
+        margin-bottom: 2vh;
+    }
+    .main .main__affiches--img{
+        height: 15vh;
+    }
+    .footer{
+        margin: 5vh 0 0 0;
+        flex-direction: column;
+    }
+    .footer .footer__ul{
+        margin-left: 10vw;
+    }
+    
+}
+
+
+
+    
+
 
