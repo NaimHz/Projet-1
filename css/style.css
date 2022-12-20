@@ -28,11 +28,9 @@ body{
     height: 69px; 
     margin-right: 20px;
 }
-
 .header .header__links{
     display: flex;
 }
-
 .header .header__link{
     text-decoration: none;
     color: black;
@@ -166,6 +164,7 @@ body{
     font-size: 20px;
     width: 100%;
     margin-bottom: 23px;
+    position: relative;
 }
 .main .main__hebergements--marseille{
     width: 78%;
@@ -189,8 +188,12 @@ body{
 }
 .fa-solid.fa-chart-line{
     color: #0065FC;
-    position: relative;
-    left: 27%;
+}
+.main .main__iconepopulaire{
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+
 }
 .main .main__links{
     text-decoration: none;
@@ -295,7 +298,6 @@ body{
 .footer{
     display: flex;
     margin-top: 60px;
-    align-items: top;
     margin: 60px 53px 0 48px;
     justify-content: space-around;
     background-color: #F2F2F2;
@@ -318,8 +320,12 @@ body{
     *{
         max-width: 992px;
     }
+    .main .main__h3{
+        margin-right: 10px;
+    }
     .main .main__filter{
         padding: 8px 13px;
+        margin-right: 10px;
     }
     .main .main__article--hebergements{
         display: flex;
@@ -345,7 +351,12 @@ body{
         flex-basis: 100%;
     }
     .fa-solid.fa-chart-line{
-        margin-left: 46%;
+        color: #0065FC;
+    }
+    .main .main__iconepopulaire{
+        display: inline-block;
+        float: right;
+        vertical-align: middle;
     }
     .main__hebergements--populaires .main__links{
         width: auto;
@@ -356,6 +367,9 @@ body{
         margin-right: 3%;
         word-wrap: break-word;
     }
+    .main__card--populaire .main__links{
+        line-height: 16px;
+    } 
     .main .main__affiches--img{
         height: 211px;
     }
@@ -364,16 +378,16 @@ body{
     }
 }
 @media screen and (max-width: 767px){
-    .body{ 
-        width: 100%;
-    }
+    
     .header{
         margin-left: 0;
+        margin-right: 0;
     }
     .header .header__nav{
         flex-direction: column;
         align-items: center;
         margin-top: 21px;
+        margin-right: 0;
     }
     .header .header__link{
         padding-bottom: 20px;
@@ -398,12 +412,12 @@ body{
         margin-right: auto;
     }
     .main .searchbar__form{
-        width: 100%;
+        width: 90%;
         justify-content: unset;
     }
     .main .searchbar__input{
         padding-left: 4%;
-        padding-right: 7%;
+        padding-right: 2%;
     }
     .location{
         align-self: center;
@@ -413,15 +427,14 @@ body{
         display: none;
     }
     .main .searchbar__button2{
+        display: inline-block;
         width: 50px;
         height: 49px;
-        display: flex;
         justify-content: center;
         align-items: center;
         background-color: #0065FC;
         border-radius: 0px 20px 20px 0px;
         color: white;
-        box-shadow: 0;
         border: 0;
     }
     .main .main__list{
@@ -431,11 +444,13 @@ body{
     .main .main__filters{
         flex-direction: column;
         align-items: unset;
+        
     }
     .main .main__filter{
-        width: 27vw;
+        width: 32%;
         font-size: 11px;
         margin-top: 2vh;
+        margin-right: 0;
     }
     .main .main__list{
         margin-top: 2vh;
@@ -452,16 +467,23 @@ body{
         align-items: center;
         padding-left: 0;
         padding-right: 0;
+        position: relative;
+        width: 100%;
     }
-    .main .main__hebergements-title{
-        margin-left: 4vw;
+    .main .main__article--hebergements h2{
+        width: 90%;
+        margin-left: 0;
     }
     .main .main__card--populaire{
         width: 80%;
-
     }
     .fa-solid.fa-chart-line{
-        margin-left: 15%;
+        color: #0065FC;
+    }
+    .main .main__iconepopulaire{
+        display: inline-block;
+        float: right;
+        vertical-align: middle;
     }
     .main .main__hebergements--marseille{
         flex-direction: column;
@@ -499,14 +521,17 @@ body{
         margin-bottom: 2vh;
     }
     .main .main__affiches--img{
-        height: 15vh;
+        height: 30vh;
     }
     .footer{
-        margin: 5vh 0 0 0;
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
         flex-direction: column;
     }
     .footer .footer__ul{
         margin-left: 10vw;
+        
     }
     
 }
