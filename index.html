@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="fr">
     <head>
-    <title>Booki</title>
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://kit.fontawesome.com/a68c4aa843.js" crossorigin="anonymous"></script>
+        <title>Booki</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <script src="https://kit.fontawesome.com/a68c4aa843.js" crossorigin="anonymous"></script>
     </head>
     <body>
         <header class="header">
@@ -17,34 +17,33 @@
             </nav>
         </header>
         <main class="main">
-            <section class="main__section--filters">    
+            <section class="main__section--search">    
                 <h1 class="main__h1">Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p class="main__p">En plein centre-ville ou en pleine nature</p>
                 <div class="main__searchbar">
-                    <div class="location">
-                        <i class="fa-solid fa-location-dot"></i>
+                    <div class="main__searchbar--location">
+                        <i class="fa-solid fa-location-dot main__searchbar--iconelocation"></i>
                     </div>
-                    <form class="searchbar__form">
-                        <input name="rechercher" placeholder="Marseille, France" class="searchbar__input">
-                        <button class="searchbar__button">Rechercher</button>
-                        <button class="searchbar__button2"><i class="fa-solid fa-magnifying-glass"></i></button>
-
+                    <form class="main__form">
+                        <input name="rechercher" placeholder="Marseille, France" class="main__form--input">
+                        <button class="main__form--button">Rechercher</button>
+                        <button class="main__form--button2"><i class="fa-solid fa-magnifying-glass main__form--iconsearch"></i></button>
                     </form>
                 </div>
                 <div class="main__filters">
                     <h3 class="main__h3">Filtres</h3>
                     <ul class="main__list">
-                        <li class="main__filter"><i class="fa-solid fa-money-bill-wave"></i>Économiques</li>
-                        <li class="main__filter"><i class="fa-solid fa-person"></i>Familial</li>
-                        <li class="main__filter"><i class="fa-solid fa-heart"></i>Romantique</li>
-                        <li class="main__filter"><i class="fa-solid fa-dog"></i>Animaux autorisés</li>
+                        <li class="main__filter"><i class="fa-solid fa-money-bill-wave main__filter--icon"></i>Économiques</li>
+                        <li class="main__filter"><i class="fa-solid fa-person main__filter--icon"></i>Familial</li>
+                        <li class="main__filter"><i class="fa-solid fa-heart main__filter--icon"></i>Romantique</li>
+                        <li class="main__filter"><i class="fa-solid fa-dog main__filter--icon"></i>Animaux autorisés</li>
                     </ul>     
                 </div>
-                <p class="main__infologement info-icone"><i class="fa-solid fa-info"></i>Plus de 500 logements sont disponibles dans cette ville</p>
+                <p class="main__infologement"><i class="fa-solid fa-info main__infologement--icon"></i>Plus de 500 logements sont disponibles dans cette ville</p>
             </section>
-            <article class="main__article--hebergements" aria-label="article">
+            <article class="main__article--hebergements" aria-label="hébergements">
                 <section class="main__hebergements--marseille" id="Hébergements">
-                    <h2>Hébergements à Marseille</h2>
+                    <h2 class="main__hebergements--title main_hebergements--titlemarseille">Hébergements à Marseille</h2>
                     <div class="main__card--marseille">   
                         <a href="#" class="main__links">   
                             <img class="main__card--imgmarseille" src="assets/Hébergements/1.jpg" alt="Auberge la Canebière">
@@ -110,7 +109,7 @@
                     </a>
                 </section>
                 <section class="main__hebergements--populaires">
-                    <h2 class="main__hebergements-title">Les plus populaires <span class="main__iconepopulaire"><i class="fa-solid fa-chart-line"></i></span></h2>    
+                    <h2 class="main__hebergements--title main__hebergements--titlepopulaire">Les plus populaires <span class="main__hebergements--icon"><i class="fa-solid fa-chart-line main__hebergements--iconpopulaire"></i></span></h2>    
                     <div class="main__card--populaire">   
                         <a href="#" class="main__links">      
                             <img class="main__card--imgpopulaires" src="assets/Hébergements/7.jpg" alt="Hôtel Le soleil du matin">
@@ -145,8 +144,7 @@
             </article>    
             <article class="main__article--activités" id="Activités" aria-label="article">
                 <section class="main__activités">
-                    <h2 class="main__ativités--title">Activités à Marseille</h2>
-                    
+                    <h2 class="main__activités--title">Activités à Marseille</h2>
                     <div class="main__activités--marseille">    
                             <div class="main__affiches--marseille">
                                 <a href="#" class="main__links">    
