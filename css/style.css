@@ -183,7 +183,6 @@ body{
     color: #0065FC;
 }
 .main .main__hebergements--icon{
-    display: inline-block;
     float: right;
     vertical-align: middle;
 }
@@ -350,7 +349,6 @@ body{
         color: #0065FC;
     }
     .main .main__hebergements--icon{
-        display: inline-block;
         float: right;
         vertical-align: middle;
     }
@@ -473,7 +471,6 @@ body{
         color: #0065FC;
     }
     .main .main__hebergements--icon{
-        display: inline-block;
         float: right;
         vertical-align: middle;
     }
@@ -526,9 +523,7 @@ body{
     }
     .footer .footer__ul{
         margin-left: 10vw;
-        
     }
-    
 }
 
 
